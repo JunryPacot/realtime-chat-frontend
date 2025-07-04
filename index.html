@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Real-Time Chat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Room</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Chat App</h1>
-  <div id="chat-box"></div>
-  <input type="text" id="message" placeholder="Type your message..." />
-  <button onclick="sendMessage()">Send</button>
+  <div class="chat-container">
+    <h1>💬 Real-Time Chat</h1>
+    
+    <div id="chat-box"></div>
+    
+    <div class="input-area">
+      <input type="text" id="message" placeholder="Type your message..." autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
 
   <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
   <script src="main.js"></script>
