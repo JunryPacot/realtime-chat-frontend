@@ -1,5 +1,5 @@
 // Replace this with your Render backend URL later!
-const socket = io("https://your-backend-url.onrender.com");
+const socket = io("https://chat-backend-dbyq.onrender.com");
 
 const chatBox = document.getElementById("chat-box");
 const messageInput = document.getElementById("message");
